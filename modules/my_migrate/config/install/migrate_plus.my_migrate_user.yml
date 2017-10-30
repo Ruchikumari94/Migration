@@ -1,0 +1,39 @@
+id: my_user
+langcode: en
+status: true
+dependencies:
+    enforced:
+        module:
+            - my_migrate
+label: 'My migration'
+source:
+    plugin: csv
+    track_changes: true
+    path: /config/user.csv
+    header_row_count: 1
+    keys:
+        - unique_id
+destination:
+    plugin: entity:user
+process:
+    name: username
+    field_first_name: field_first_name
+    field_last_name: field_last_name
+    pass: password
+    status: status
+    mail: email
+    init: init
+    field_department:
+        plugin: skip_on_empty
+        method: process
+        source: tid
+    user_picture:
+        -
+            plugin: skip_on_empty
+            method: process
+            source: filename
+        -
+            plugin: migration
+            migration: teacher_image
+            source: unique_id
+            no_stub: true

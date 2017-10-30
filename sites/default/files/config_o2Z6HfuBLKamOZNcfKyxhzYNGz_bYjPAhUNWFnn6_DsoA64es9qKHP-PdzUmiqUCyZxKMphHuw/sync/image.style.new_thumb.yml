@@ -1,0 +1,14 @@
+uuid: ea6fad62-67a2-4bec-b249-bbe7f404eaae
+langcode: en
+status: true
+dependencies: {  }
+name: new_thumb
+label: 'new image'
+effects:
+  4aaa3fe5-964b-4343-bfe7-c14045585993:
+    uuid: 4aaa3fe5-964b-4343-bfe7-c14045585993
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
