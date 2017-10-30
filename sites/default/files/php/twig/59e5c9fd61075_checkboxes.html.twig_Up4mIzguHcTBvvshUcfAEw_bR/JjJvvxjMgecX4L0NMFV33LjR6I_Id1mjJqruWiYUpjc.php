@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/classy/templates/form/confirm-form.html.twig */
-class __TwigTemplate_9bd8404cf18ea2c9f4fb38bf5193ed1303913d1da4d1de909f9885714943b680 extends Twig_Template
+/* core/themes/classy/templates/form/checkboxes.html.twig */
+class __TwigTemplate_0b499418c4a2bde5132c080cb739e80414b1eda01d5580dd3e86727a36d0e41a extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -39,15 +39,18 @@ class __TwigTemplate_9bd8404cf18ea2c9f4fb38bf5193ed1303913d1da4d1de909f988571494
             throw $e;
         }
 
-        // line 13
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["form"] ?? null), "html", null, true));
-        echo "
+        // line 15
+        echo "<div";
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute(($context["attributes"] ?? null), "addClass", array(0 => "form-checkboxes"), "method"), "html", null, true));
+        echo ">";
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["children"] ?? null), "html", null, true));
+        echo "</div>
 ";
     }
 
     public function getTemplateName()
     {
-        return "core/themes/classy/templates/form/confirm-form.html.twig";
+        return "core/themes/classy/templates/form/checkboxes.html.twig";
     }
 
     public function isTraitable()
@@ -57,7 +60,7 @@ class __TwigTemplate_9bd8404cf18ea2c9f4fb38bf5193ed1303913d1da4d1de909f988571494
 
     public function getDebugInfo()
     {
-        return array (  43 => 13,);
+        return array (  43 => 15,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -70,6 +73,6 @@ class __TwigTemplate_9bd8404cf18ea2c9f4fb38bf5193ed1303913d1da4d1de909f988571494
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "core/themes/classy/templates/form/confirm-form.html.twig", "/var/www/html/drupalmigrate/core/themes/classy/templates/form/confirm-form.html.twig");
+        return new Twig_Source("", "core/themes/classy/templates/form/checkboxes.html.twig", "/var/www/html/drupalmigrate/core/themes/classy/templates/form/checkboxes.html.twig");
     }
 }
