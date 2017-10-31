@@ -1,0 +1,12 @@
+name: MyFeature
+description: 'CustomType + CustomView'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+  - views
